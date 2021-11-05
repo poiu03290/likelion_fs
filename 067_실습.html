@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVER 로그인 창 만들기</title>
+    <style>
+        .container {
+            width: 350px;
+            height: 135px;
+            background-color: #f7f9fa;
+            padding: 16px 16px 12px 17px;
+            border: 1px solid #dae1e6;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .login-text-form {
+            font-size: 12px;
+            color: #404040;
+        }
+        .login-btn {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 48px;
+            align-items: center;
+            font-size: 13px;
+            background-color: #19ce60;
+            border: 1px solid #15c654;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .login-btn-text {
+            padding-left: 4px;
+        }
+        .login-sub-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .login-sub-id {
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            align-items: center;
+            font-size: 12px;
+            color: #404040;
+        }
+        .sub-join-text {
+            font-size: 12px;
+            color: #404040;
+        }
+        .circle {
+            width: 3px;
+            height: 3px;
+            background-color: gainsboro;
+            border-radius: 50%;
+            margin: 5px;
+        }
+        .id {
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="login-text-form">네이버를 더 안전하고 편리하게 이용하세요</span>
+        <div class="login-btn">
+            <img src="../과제/images/images/title.png" alt="로고 이미지" style="width: 60px">
+            <span class="login-btn-text">로그인</span>
+        </div>
+        <div class="login-sub-form">
+            <div class="login-sub-id">
+                <img src="../과제/images/images/lock.png" alt="자물쇠 이미지" style="width: 12px;">
+                <span class="id">아이디</span>
+                <div class="circle"></div>
+                <span>비밀번호 찾기</span>
+            </div>
+            <div class="login-sub-join">
+                <img src="../과제/images/images/user.png" alt="유저 이미지" style="width: 12px;">
+                <span class="sub-join-text">회원가입</span>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

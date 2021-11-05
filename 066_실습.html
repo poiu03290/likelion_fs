@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .child-1 {
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+        .child-2 {
+            width: 100%;
+            height: 100px;
+        }
+        .child-3 {
+            width: 100%;
+            height: 100px;
+            background-color: yellow;
+        }
+        .child-1-1 {
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: red;
+        }
+        .child-1-2 {
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: green;
+        }
+        .child-1-3 {
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1"></div>
+        <div class="child-2">
+            <div class="child-1-1"></div>
+            <div class="child-1-2"></div>
+            <div class="child-1-3"></div>
+        </div>
+        <div class="child-3"></div>
+    </div>
+</body>
+</html>

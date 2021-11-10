@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        .btn {
+            position: relative;
+            width: 200px;
+            height: 80px;
+            background-color: white;
+            border: 2px solid pink;
+            border-radius: 15px;
+            color: pink;
+            cursor: pointer;
+            font-size: 20px;
+            letter-spacing: 4px;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            position: absolute;
+            content: '';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: purple;
+            border-radius: 60px 60px 0 0;
+            color: white;
+            border: 2px solid purple;
+            transform: translateY(100px);
+            transition: all .5s;
+        }
+
+        .btn:hover {
+            border: 2px solid purple;
+        }
+
+        .btn:hover::before {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">실습</button>
+</body>
+</html>

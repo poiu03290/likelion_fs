@@ -1,0 +1,112 @@
+.btn-login {
+    width: 100%;
+    padding: 17px 0 15px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 28px;
+    background-color: #2F80ED;
+    border-radius: 5px;
+    border: none;
+    color: #FFF;
+}
+
+.btn-close {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+}
+
+.module-inp .inp-login{
+    display: block;
+    width: 100%;
+    padding: 15px 0 15px 16px;
+    border: 1px solid #C4C4C4;
+    font-weight: 500;
+    box-sizing: border-box;
+    line-height: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.module-inp.module-inp-id.error .inp-login {
+    border: 2px solid #F4492E;
+}
+
+.module-inp .inp-error {
+    display: none;
+    margin: 6px 0 0 4px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F4492E;
+}
+
+.module-inp.error .inp-error {
+    display: block;
+}
+
+.txt-hide {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.module-inp + .module-inp {
+    margin-top: 10px;
+}
+
+.link-sns-login {
+    display: block;
+    padding: 15px 0;
+    color: #767676;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #767676;
+    text-indent: -38px;
+}
+
+.link-sns-login::before {
+    display: block;
+    content: '';
+    float: left;
+    width: 21px;
+    height: 22px;
+    margin-left: 16px;
+    background-image: url('./image-login/images-login/icon_google.png');
+}
+
+.link-sns-login.icon-naver {
+    border-color: #00BF18;
+}
+
+.link-sns-login.icon-naver::before{
+    background-image: url('./image-login/images-login/icon_naver.png');
+}
+
+.link-sns-login.icon-facebook {
+    border-color: #2D9CDB;
+}
+
+.link-sns-login.icon-facebook::before{
+    /* background-image: url('./image-login/images-login/icon_facebook.png');
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: url('./image-login/images-login/icon_facebook.png') no-repeat center;
+}
+
+.link-sns-login.icon-kakao {
+    border-color: #F2C942;
+}
+
+.link-sns-login.icon-kakao::before{
+    background-image: url('./image-login/images-login/icon_kakao.png');
+}

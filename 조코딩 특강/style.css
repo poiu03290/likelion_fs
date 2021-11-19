@@ -1,0 +1,101 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* index.html */
+
+.landing {
+    background-color: #0D6EFD;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+.landing h1 {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    font-weight: 700;
+}
+
+.landing p {
+    margin-bottom: 2px;
+}
+
+.footer {
+    background-color: #E8EEF4;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7C8081;
+}
+
+.kakao-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 100px;
+}
+
+/* test.html */
+
+.header {
+    background-color: #0D6EFD;
+    height: 10vh;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 3px;
+    font-weight: 700;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 50px 0;
+}
+
+.question h2 {
+    font-weight: bold;
+}
+
+.question p {
+    text-align: center;
+    width: 80%;
+}
+
+/* result.html */
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.result img {
+    max-width: 500px;
+    width: 80%;
+}

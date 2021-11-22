@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>셀렉트 박스 만들기</title>
+  <style>
+      h2 {
+            margin: 30px;
+        }
+
+        .btn-select {
+            width: 200px;
+            height: 30px;
+            background: purple;
+            color: #fff;
+        }
+
+        .list-member {
+            display: none;
+            width: 200px;
+            height: 30px;
+        }
+
+        .list-member.on {
+            display: block;
+        }
+
+        .btn-select:active+.list-member {
+            display: block;
+        }
+
+        .list-member li {
+            height: 30px;
+            width: 200px;
+        }
+
+        .list-member li button {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+        .list-member li button:hover {
+            background-color: bisque;
+        }
+
+        /* .btn-select {
+            width: 200px;
+            height: 40px;
+            border: 1px solid #C4C4C4;
+            border-radius: 10px;
+            font-size: 12px;
+            line-height: 14px;
+            background-color: #fff;
+            padding: 13px 80px 13px 14px;
+            background: no-repeat url('./Polygon\ 1.png');
+            background-position: 95% 50%;
+            cursor: pointer;
+        }
+
+        .list-member {
+            display: none;
+            width: 200px;
+            height: 30px;
+        }
+
+        .list-member.on {
+            display: block;
+        }
+
+        .btn-select:active+.list-member {
+            display: block;
+        }
+
+        .list-member li {
+            height: 30px;
+            width: 200px;
+        }
+
+        .list-member li button {
+            display: block;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+        .list-member li button:hover {
+            background-color: #F8E4FF;
+        } */
+  </style>
+</head>
+<body>
+    <h2>셀렉트 박스 만들기</h2>
+    <article class="cont-select">
+        <button class="btn-select">최애 프로그래밍 언어</button>
+        <ul class="list-member">
+            <li><button type="button">Python</button></li>
+            <li><button type="button">Java</button></li>
+            <li><button type="button">JavaScript</button></li>
+            <li><button type="button">C#</button></li>
+            <li><button type="button">C/C++</button></li>
+        </ul>
+    </article>
+
+    <script>
+        const btn = document.querySelector('.btn-select');
+        const list = document.querySelector('.list-member');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                btn.innerText = event.target.innerText;
+                btn.classList.remove('on');
+            }
+        });
+    </script>
+</body>
+</html>

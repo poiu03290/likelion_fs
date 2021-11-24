@@ -1,0 +1,21 @@
+@mixin hyuk-font($x, $y) {
+    font-size: $x * $y + px;
+    @content;
+} 
+
+.one {
+    @include hyuk-font;
+}
+
+.two {
+    @include hyuk-font(20);
+}
+
+.three {
+    @include hyuk-font(3, 3);
+}
+
+
+.four {
+    @include hyuk-font($y: 10);
+}

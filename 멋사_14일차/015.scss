@@ -1,0 +1,12 @@
+@mixin hyuk-font($x, $y) {
+    font-size: $x * $y + px;
+    @content
+} 
+
+ul  {
+    li {
+        @include hyuk-font(10, 10){
+            color: red;
+        }
+    }   
+}

@@ -1,0 +1,101 @@
+window.console.log('hello world')
+VM427:1 hello world
+undefined
+document.write('hello world')
+undefined
+document.getElementById().innerHTML = 'hi'
+VM664:1 Uncaught TypeError: Failed to execute 'getElementById' on 'Document': 1 argument required, but only 0 present.
+    at <anonymous>:1:10
+(anonymous) @ VM664:1
+document.getElementById().innerHTML = 'hi'
+VM696:1 Uncaught TypeError: Failed to execute 'getElementById' on 'Document': 1 argument required, but only 0 present.
+    at <anonymous>:1:10
+(anonymous) @ VM696:1
+window.alert('hi')
+undefined
+window.console.log
+ƒ log() { [native code] }
+console.error('hello')
+VM883:1 hello
+(anonymous) @ VM883:1
+undefined
+console.table
+ƒ table() { [native code] }
+let tablesample = {
+    'name': 'hyuk',
+    'age': '26',
+    'money': 
+}
+VM1057:5 Uncaught SyntaxError: Unexpected token '}'
+let 나변수 = 10
+undefined
+0b100
+4
+0o100
+64
+0x100
+256
+let tablesample
+undefined
+let tablesample = 100
+undefined
+let tablesample = 100
+undefined
+let tablesample
+undefined
+var 하나 = 100;
+undefined
+var 하나 = 200;
+undefined
+var 하나
+undefined
+let k = {
+    'a': 'aa',
+}
+undefined
+'a': 'aa',
+VM1381:1 Uncaught SyntaxError: Unexpected token ':'
+let k = {
+    'a': 'aa',
+    'b': 'bb',
+    'c': 'cc',
+    'd': 'dd',
+}
+undefined
+k
+{a: 'aa', b: 'bb', c: 'cc', d: 'dd'}
+k
+{a: 'aa', b: 'bb', c: 'cc', d: 'dd'}
+k
+{a: 'aa', b: 'bb', c: 'cc', d: 'dd'}a: "aa"b: "bb"c: "cc"d: "dd"[[Prototype]]: Object
+k.e = 'ee'
+'ee'
+k.e
+'ee'
+function add(x, y){
+}
+undefined
+function add(x, y){
+    return x+y;
+}
+undefined
+add.a = 100
+100
+add
+ƒ add(x, y){
+    return x+y;
+}
+0.1 + 0.2 
+0.30000000000000004
+0.1
+0.1
+0.1 + 0.2
+0.30000000000000004
+0.1 + 0.1
+0.2
+0.1 * 0.1
+0.010000000000000002
+0.1 * 3
+0.30000000000000004
+0.3 + 0.6
+0.8999999999999999

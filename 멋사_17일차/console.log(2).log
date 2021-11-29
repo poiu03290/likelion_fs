@@ -1,0 +1,276 @@
+for (let index = 0; index < 101; index++) {
+    if (index % 3 === 0 || index % 5 === 0) {
+        console.log(index)
+    }
+}
+VM3217:3 0
+VM3217:3 3
+VM3217:3 5
+VM3217:3 6
+VM3217:3 9
+VM3217:3 10
+VM3217:3 12
+VM3217:3 15
+VM3217:3 18
+VM3217:3 20
+VM3217:3 21
+VM3217:3 24
+VM3217:3 25
+VM3217:3 27
+VM3217:3 30
+VM3217:3 33
+VM3217:3 35
+VM3217:3 36
+VM3217:3 39
+VM3217:3 40
+VM3217:3 42
+VM3217:3 45
+VM3217:3 48
+VM3217:3 50
+VM3217:3 51
+VM3217:3 54
+VM3217:3 55
+VM3217:3 57
+VM3217:3 60
+VM3217:3 63
+VM3217:3 65
+VM3217:3 66
+VM3217:3 69
+VM3217:3 70
+VM3217:3 72
+VM3217:3 75
+VM3217:3 78
+VM3217:3 80
+VM3217:3 81
+VM3217:3 84
+VM3217:3 85
+VM3217:3 87
+VM3217:3 90
+VM3217:3 93
+VM3217:3 95
+VM3217:3 96
+VM3217:3 99
+VM3217:3 100
+undefined
+for (let index = 0; index < 101; index++) {
+    if (index % 3 === 0 || index % 5 === 0) {
+        index += index
+    }
+}
+
+console.log(index)
+VM3222:7 Uncaught ReferenceError: index is not defined
+    at <anonymous>:7:13
+(anonymous) @ VM3222:7
+result = 0
+for (let index = 0; index < 101; index++) {
+    if (index % 3 === 0 || index % 5 === 0) {
+        result += index
+    }
+}   
+
+console.log(result)
+VM3227:8 2418
+undefined
+result = 0
+for (let index = 0; index < 101; index++) {
+    if (index % 3 === 0 && index % 5 === 0) {
+        result += index
+    }
+}   
+
+console.log(result)
+VM3232:8 315
+undefined
+let x = 15
+document.write(`x % 3 == 0 || x % 5 == 0 : ${x % 3 == 0 || x % 5 == 0} <br>`);
+undefined
+let x = 15
+`x % 3 == 0 || x % 5 == 0 : ${x % 3 == 0 || x % 5 == 0};
+VM3282:2 Uncaught SyntaxError: Unexpected end of input
+let x = 15
+x % 3 == 0 || x % 5 == 0 : ${x % 3 == 0 || x % 5 == 0};
+VM3286:2 Uncaught SyntaxError: Unexpected token ':'
+false || true
+true
+true && false
+false
+!true
+false
+!((true && false)) || (true && false))
+VM3452:1 Uncaught SyntaxError: Unexpected token ')'
+!((true && false) || (true && false))
+true
+let x = 10
+undefined
+!((x % 5 == 0 && x % 2 == 0) || (x / 2 == 5 && false))
+false
+let job = true
+undefined
+job && '완료' || '미완료'
+'완료'
+job = false;
+false
+job && '완료' || '미완료'
+'미완료'
+typeof(5)
+'number'
+typeof('5')
+'string'
+typeof("5")
+'string'
+typeof(`5`)
+'string'
+true : console.log(1) ? console.log(2)
+VM3932:1 Uncaught SyntaxError: Unexpected token ':'
+true : console.log(1) ? console.log(2);
+VM3939:1 Uncaught SyntaxError: Unexpected token ':'
+true ? console.log(1) : console.log(2);
+VM3957:1 1
+undefined
+false ? console.log(1) : console.log(2);
+VM3981:1 2
+undefined
+let value = 10;
+undefined
+value % 2 === 0 ? console.log(1) : console.log(2);
+VM4078:1 1
+undefined
+'혁'?'천재':'바보'
+'천재'
+Boolean('혁')
+true
+Boolean('')
+false
+Boolean(1)
+true
+Boolean(0)
+false
+Boolean(' ')
+true
+Boolean(-1)
+true
+Boolean('false')
+true
+Boolean('true')
+true
+Boolean(flase)
+VM4450:1 Uncaught ReferenceError: flase is not defined
+    at <anonymous>:1:9
+(anonymous) @ VM4450:1
+Boolean(false)
+false
+typeof '5'
+'string'
+typeof 5
+'number'
+typeof true
+'boolean'
+String(5)
+'5'
+Number(true)
+1
+Number(false)
+0
+Number('5')
+5
+typeof([1, 2, 3, 4])
+'object'
+typeof({'one': 하나, 'two': 둘, 'three':셋})
+VM4852:1 Uncaught ReferenceError: 하나 is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM4852:1
+typeof({'one': 하나, 'two': 둘, 'three':셋});
+VM4859:1 Uncaught ReferenceError: 하나 is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM4859:1
+typeof({'one': 하나, 'two': 둘, 'three': 셋})
+VM4869:1 Uncaught ReferenceError: 하나 is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM4869:1
+typeof({'one': 하나, 'two': 둘, 'three': 셋})
+VM4873:1 Uncaught ReferenceError: 하나 is not defined
+    at <anonymous>:1:16
+(anonymous) @ VM4873:1
+typeof({'one': '하나', 'two': '둘', 'three': '셋'})
+'object'
+typeof('1' + 1)
+'string'
+'1' + 1
+'11'
+1 + '11'
+'111'
+Boolean([])
+true
+Boolean({})
+true
+String(123)
+'123'
+123.toString(123)
+VM5158:1 Uncaught SyntaxError: Invalid or unexpected token
+123.toString(1)
+VM5164:1 Uncaught SyntaxError: Invalid or unexpected token
+let x = 10
+undefined
+x.toString()
+'10'
+'0' == 0
+true
+'0' === 0
+false
+0 == '
+VM5307:1 Uncaught SyntaxError: Invalid or unexpected token
+0 == ''
+true
+0 == '0'
+true
+false == 'false'
+false
+false == '0'
+true
+false == null
+false
+false == undefined
+false
+false == NaN
+false
+null == 'null'
+false
+!!null
+false
+!!undefined
+false
+!!NaN
+false
+null == undefined
+true
+undefined == NaN
+false
+null == NaN
+false
+null == undefined
+true
+let x = '10000'
+undefined
++x
+10000
+-x
+-10000
+x
+'10000'
++x
+10000
+Number('10')
+10
+parseInt('123')
+123
+parseInt('123asd')
+123
+const x = '123'
+VM5911:1 Uncaught SyntaxError: Identifier 'x' has already been declared
+const x = '123asd'
+VM5917:1 Uncaught SyntaxError: Identifier 'x' has already been declared
+const m = '123asd'
+undefined
++m
+NaN

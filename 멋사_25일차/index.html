@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <input class="id-input">
+    <input class="pw-input">
+    <button class="btnLoadButton">데이터 불러오기</button>
+    <div class="dataField"></div>
+    <script>
+        let userData
+        
+        function success(userDataParams) {
+            document.write(userDataParams);
+        }
+
+        function fail() {
+            document.write('fail');
+        }
+
+        
+        $('.btnLoadButton').click(function() {
+            $.ajax({
+                url:'https://raw.githubusercontent.com/poiu03290/ajaxlogintest/main/userdata.json', 
+                async: true, 
+                success: function(response) {
+                    console.log(response)
+                    let id = $('.id-input').val()
+                    let pw = $('.pw-input').val()
+                    response = JSON.parse(response)
+                    userData = response.find(user => user.id === id && user.pw === pw);
+                    
+                    if (userData) {
+                        success(userData)
+                    } else {
+                        fail()
+                    }
+                }
+            });
+        })
+    </script>
+</body>
+</html>

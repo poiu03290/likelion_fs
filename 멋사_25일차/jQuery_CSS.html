@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. items 부모를 찾아 background-color를 파란색으로 변경
+         2. items 2번째 color을 빨간색으로 변경
+         3. ul2의 자식인 li요소를 선택하여 1번부터 3번까지 color를 녹색으로 변경
+         4. ul2의 자식인 lu요소를 선택하여 7번부터 10번까지 color를 파란색, background-color를 빨간색으로 변경 
+    -->
+    <div class="wrapper">
+        <h1 class="title">TITLE</h1>
+        <ul>
+            <li class="items">item 1</li>
+            <li class="items">item 2</li>
+            <li class="items">item 3</li>
+        </ul>
+    </div>
+    <ul class="ul2">
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+    <div id="div1">hello world</div>
+    <div class="one blue">hello world</div>
+    <div class="two blue">hello world</div>
+    <p class="blue">hello world</p>
+    <div class="three">hello</div>
+    <div class="three blue">hello</div>
+    <div class="box">hello world</div>
+    <script>
+        $('.items').parent('ul').css('backgroundColor', 'blue')
+        $('ul .items:nth-child(2)').css('color', 'red')
+        $('.ul2 li:lt(3)').css('color', 'green')
+        $('.ul2 li:gt(5)').css('color', 'blue').css('backgroundColor', 'red')
+        $('ul').append('<li>hello world end</li>')
+        $('ul').prepend('<li>hello world start</li>')
+        $('ul').after('<li>끝!</li>')
+        $('ul').before('<li>시작!</li>')
+        // $('#div1').remove()
+        $('div').addClass('important')
+        $('.one, .two, p').removeClass('blue')
+        $('.three').togleClass('blue')
+    </script>
+</body>
+</html>
